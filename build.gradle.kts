@@ -4,7 +4,7 @@ import org.gradle.kotlin.dsl.protobuf
 plugins {
     id("org.jetbrains.kotlin.jvm") version "2.3.20"
     id("org.jetbrains.kotlin.plugin.allopen") version "2.3.20"
-    id("com.google.devtools.ksp") version "2.3.6"
+    id("org.jetbrains.kotlin.kapt") version "2.3.20"
     id("io.micronaut.application") version "4.6.2"
     id("com.google.protobuf") version "0.9.6"
     id("com.gradleup.shadow") version "8.3.9"
@@ -21,13 +21,13 @@ repositories {
 }
 
 dependencies {
-    ksp("io.micronaut:micronaut-http-validation")
-    ksp("io.micronaut.openapi:micronaut-openapi")
-    ksp("io.micronaut.serde:micronaut-serde-processor")
-    ksp("io.micronaut.data:micronaut-data-processor")
-    ksp("io.micronaut.validation:micronaut-validation-processor")
-    ksp("io.micronaut.security:micronaut-security-annotations")
-    ksp("io.micronaut.tracing:micronaut-tracing-opentelemetry-annotation")
+    kapt("io.micronaut:micronaut-http-validation")
+    kapt("io.micronaut.openapi:micronaut-openapi")
+    kapt("io.micronaut.serde:micronaut-serde-processor")
+    kapt("io.micronaut.data:micronaut-data-processor")
+    kapt("io.micronaut.validation:micronaut-validation-processor")
+    kapt("io.micronaut.security:micronaut-security-annotations")
+    kapt("io.micronaut.tracing:micronaut-tracing-opentelemetry-annotation")
 
     // GRPC
     implementation("io.micronaut.grpc:micronaut-grpc-runtime")
@@ -114,6 +114,15 @@ protobuf {
 }
 
 
+
+//kapt {
+//    correctErrorTypes = true
+//    keepJavacAnnotationProcessors = true
+//}
+//
+//tasks.matching { it.name.startsWith("kapt") }.configureEach {
+//    dependsOn("generateProto")
+//}
 
 micronaut {
     testRuntime("junit5")
