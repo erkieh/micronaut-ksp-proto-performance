@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "com.example.grpc";
+option java_outer_classname = "ExampleOuterClass13";
+
+import "example_proto_3.proto";
+
+package example;
+
+
+service ExampleService12 {
+  rpc ExampleRpc5(ExampleMessage10) returns (ExampleMessage89) {}
+}
+
+message ExampleMessage89 {
+  int64 example_field_4 = 1;
+  string example_field_64 = 2;
+  string example_field_66 = 3;
+  string example_field_67 = 4;
+  int64 example_field_21 = 5;
+  ExampleEnum16 example_field_52 = 6;
+}
+
+enum ExampleEnum16 {
+  EXAMPLE_ENUM_VALUE_56 = 0;
+  EXAMPLE_ENUM_VALUE_76 = 1;
+}

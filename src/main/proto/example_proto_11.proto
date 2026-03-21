@@ -1,0 +1,59 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "com.example.grpc";
+option java_outer_classname = "ExampleOuterClass9";
+
+import "example_proto_3.proto";
+import "google/protobuf/empty.proto";
+
+package example;
+
+
+service ExampleService8 {
+  rpc ExampleRpc5(ExampleMessage12) returns (ExampleMessage81) {}
+  rpc ExampleRpc47(ExampleMessage79) returns (ExampleMessage80) {}
+  rpc ExampleRpc48(ExampleMessage12) returns (ExampleMessage80) {}
+  rpc ExampleRpc15(ExampleMessage12) returns (google.protobuf.Empty) {}
+}
+
+message ExampleMessage79 {
+  string example_field_18 = 1;
+  int64 example_field_31 = 2;
+  repeated int64 example_field_135 = 3;
+  repeated string example_field_136 = 4;
+  bool example_field_137 = 5;
+}
+
+message ExampleMessage80 {
+  string example_field_4 = 1;
+  string example_field_42 = 2;
+}
+
+message ExampleMessage81 {
+  string example_field_4 = 1;
+  string example_field_18 = 2;
+  ExampleEnum13 example_field_138 = 3;
+  string example_field_139 = 4;
+  ExampleEnum14 example_field_140 = 5;
+  int64 example_field_56 = 6;
+  int64 example_field_141 = 7;
+  repeated string example_field_136 = 8;
+}
+
+enum ExampleEnum13 {
+  EXAMPLE_ENUM_VALUE_62 = 0;
+  EXAMPLE_ENUM_VALUE_63 = 1;
+  EXAMPLE_ENUM_VALUE_64 = 2;
+  EXAMPLE_ENUM_VALUE_65 = 3;
+  EXAMPLE_ENUM_VALUE_66 = 4;
+  EXAMPLE_ENUM_VALUE_67 = 5;
+  EXAMPLE_ENUM_VALUE_68 = 6;
+  EXAMPLE_ENUM_VALUE_69 = 7;
+}
+
+enum ExampleEnum14 {
+  EXAMPLE_ENUM_VALUE_70 = 0;
+  EXAMPLE_ENUM_VALUE_71 = 1;
+  EXAMPLE_ENUM_VALUE_72 = 2;
+}

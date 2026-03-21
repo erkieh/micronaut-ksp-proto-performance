@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "com.example.grpc";
+option java_outer_classname = "ExampleOuterClass12";
+
+package example;
+
+service ExampleService11 {
+  rpc ExampleRpc6(ExampleMessage87) returns (stream ExampleMessage88) {}
+}
+
+message ExampleMessage87{
+  int64 example_field_21 = 1;
+  optional string example_field_6 = 2;
+}
+
+message ExampleMessage88 {
+  string example_field_6 = 1;
+  bool example_field_19 = 2;
+  string example_field_77 = 3;
+}

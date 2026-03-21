@@ -1,0 +1,111 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "com.example.grpc.v3";
+option java_outer_classname = "ExampleOuterClass7";
+
+import "example_proto_3.proto";
+import "example_proto_17.proto";
+
+package example.v3;
+
+service ExampleService6 {
+  rpc ExampleRpc5(ExampleMessage10) returns (ExampleMessage27) {}
+  rpc ExampleRpc38(ExampleMessage28) returns (ExampleMessage68) {}
+  rpc ExampleRpc39(ExampleMessage66) returns (example.common.ExampleMessage105) {}
+  rpc ExampleRpc40(ExampleMessage66) returns (example.common.ExampleMessage105) {}
+  rpc ExampleRpc41(ExampleMessage69) returns (example.common.ExampleMessage105) {}
+  rpc ExampleRpc42(ExampleMessage63) returns (ExampleMessage27) {}
+  rpc ExampleRpc43(ExampleMessage64) returns (ExampleMessage27) {}
+}
+
+message ExampleMessage27 {
+  int64 example_field_4 = 1;
+  int64 example_field_21 = 2;
+  ExampleMessage52 example_field_91 = 3;
+  bool example_field_110 = 4;
+}
+
+message ExampleMessage63 {
+  string example_field_64 = 1;
+  string example_field_65 = 2;
+  string example_field_66 = 3;
+  string example_field_67 = 4;
+  ExampleMessage52 example_field_91 = 5;
+  int64 example_field_21 = 6;
+  string example_field_88 = 7;
+  string example_field_68 = 8;
+}
+
+message ExampleMessage64 {
+  string example_field_18 = 1;
+  int64 example_field_21 = 2;
+  string example_field_72 = 3;
+  ExampleMessage52 example_field_91 = 4;
+  string example_field_111 = 5;
+  string example_field_100 = 6;
+  string example_field_103 = 7;
+  string example_field_99 = 8;
+}
+
+message ExampleMessage52{
+  ExampleMessage65 example_field_52 = 1;
+  ExampleEnum4 example_field_5 = 2;
+}
+
+message ExampleMessage65{
+  ExampleEnum12 example_field_112 = 1;
+  string example_field_18 = 2;
+}
+
+message ExampleMessage66 {
+  string example_field_113 = 1;
+  int64 example_field_114 = 2;
+  example.common.ExampleMessage105 example_field_115 = 3;
+  repeated ExampleEnum11 example_field_116 = 4;
+}
+
+message ExampleMessage28 {
+  repeated int64 example_field_59 = 1;
+}
+
+message ExampleMessage67 {
+  int64 example_field_4 = 1;
+  int64 example_field_21 = 2;
+  string example_field_18 = 3;
+  bool example_field_117 = 4;
+  string example_field_5 = 5;
+  string example_field_111 = 6;
+  repeated int64 example_field_118 = 7;
+}
+
+message ExampleMessage68 {
+  repeated ExampleMessage67 example_field_119 = 1;
+}
+
+message ExampleMessage69 {
+  int64 example_field_120 = 1;
+  repeated string example_field_121 = 2;
+}
+
+enum ExampleEnum11 {
+  EXAMPLE_ENUM_VALUE_51 = 0;
+  EXAMPLE_ENUM_VALUE_52 = 1;
+  EXAMPLE_ENUM_VALUE_53 = 2;
+  EXAMPLE_ENUM_VALUE_54 = 3;
+  EXAMPLE_ENUM_VALUE_55 = 4;
+}
+
+enum ExampleEnum12{
+  EXAMPLE_ENUM_VALUE_40 = 0;
+  EXAMPLE_ENUM_VALUE_56 = 1;
+  EXAMPLE_ENUM_VALUE_45 = 2;
+  EXAMPLE_ENUM_VALUE_44 = 3;
+  EXAMPLE_ENUM_VALUE_46 = 4;
+  EXAMPLE_ENUM_VALUE_57 = 5;
+  EXAMPLE_ENUM_VALUE_58 = 6;
+  EXAMPLE_ENUM_VALUE_59 = 7;
+  EXAMPLE_ENUM_VALUE_60 = 8;
+  EXAMPLE_ENUM_VALUE_61 = 9;
+  EXAMPLE_ENUM_VALUE_17 = 10;
+}

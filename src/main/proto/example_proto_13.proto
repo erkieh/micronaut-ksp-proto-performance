@@ -1,0 +1,37 @@
+syntax = "proto3";
+
+import "google/protobuf/empty.proto";
+import "example_proto_8.proto";
+
+option java_multiple_files = true;
+option java_package = "com.example.grpc.v1";
+option java_outer_classname = "ExampleOuterClass11";
+
+package example.v1;
+
+
+service ExampleService10 {
+  rpc ExampleRpc50(ExampleMessage84) returns (ExampleMessage84) {}
+}
+
+message ExampleMessage84 {
+  repeated ExampleMessage85 example_field_142 = 1;
+}
+
+message ExampleMessage85 {
+  repeated ExampleMessage86 example_field_143 = 1;
+  ExampleEnum15 example_field_144 = 2;
+  example.v2.ExampleEnum10 example_field_104 = 3;
+  int64 example_field_21 = 4;
+}
+
+message ExampleMessage86 {
+  string example_field_4 = 1;
+  string example_field_18 = 2;
+}
+
+enum ExampleEnum15 {
+  EXAMPLE_ENUM_VALUE_73 = 0;
+  EXAMPLE_ENUM_VALUE_74 = 1;
+  EXAMPLE_ENUM_VALUE_75 = 2;
+}

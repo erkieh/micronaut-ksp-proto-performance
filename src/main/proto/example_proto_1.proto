@@ -1,0 +1,61 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "com.example.grpc";
+option java_outer_classname = "ExampleOuterClass1";
+
+package example;
+
+
+service ExampleService1 {
+  rpc ExampleRpc1(ExampleMessage6) returns (ExampleMessage7) {}
+  rpc ExampleRpc2(ExampleMessage1) returns (ExampleMessage2) {}
+  rpc ExampleRpc3(ExampleMessage4) returns (ExampleMessage5) {}
+  rpc ExampleRpc4(ExampleMessage4) returns (ExampleMessage5) {}
+}
+
+message ExampleMessage1 {
+  string example_field_1 = 1;
+  ExampleMessage3 example_field_2 = 2;
+}
+
+message ExampleMessage2 {
+  bool example_field_3 = 1;
+}
+
+message ExampleMessage3 {
+  int64 example_field_4 = 1;
+  ExampleEnum1 example_field_5 = 2;
+}
+
+enum ExampleEnum1 {
+  EXAMPLE_ENUM_VALUE_1 = 0;
+  EXAMPLE_ENUM_VALUE_2 = 1;
+}
+
+message ExampleMessage4 {
+  string example_field_6 = 1;
+  string example_field_7 = 2;
+  string example_field_8 = 3;
+}
+
+message ExampleMessage5 {
+  string example_field_9 = 1;
+  string example_field_10 = 2;
+  string example_field_11 = 3;
+  int32 example_field_12 = 4;
+}
+
+message ExampleMessage6 {
+  string example_field_1 = 1;
+  string example_field_13 = 2;
+}
+
+message ExampleMessage7 {
+  bool example_field_14 = 1;
+  string example_field_1 = 2;
+  map<string, string> example_field_15 = 3;
+  repeated string example_field_16 = 4;
+  repeated string example_field_17 = 5;
+}
+

@@ -1,0 +1,46 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "com.example.grpc.common";
+option java_outer_classname = "ExampleOuterClass15";
+
+package example.common;
+
+message ExampleMessage105 {
+  int64 example_field_31 = 1;
+  string example_field_64 = 2;
+  string example_field_65 = 3;
+  string example_field_66 = 4;
+  string example_field_70 = 5;
+  string example_field_18 = 6;
+  string example_field_72 = 7;
+  string example_field_100 = 8;
+  ExampleEnum10 example_field_111 = 9;
+  float example_field_155 = 10;
+  bool example_field_156 = 11;
+  float example_field_157 = 12;
+  repeated string example_field_158 = 13;
+  string example_field_159 = 14;
+  string example_field_67 = 15;
+  repeated ExampleMessage105 example_field_160 = 16;
+  repeated ExampleMessage106 example_field_161 = 17;
+  string example_field_68 = 18;
+  string example_field_162 = 19;
+}
+
+enum ExampleEnum10 {
+  EXAMPLE_ENUM_VALUE_3 = 0;
+  EXAMPLE_ENUM_VALUE_4 = 1;
+  EXAMPLE_ENUM_VALUE_5 = 2;
+  EXAMPLE_ENUM_VALUE_47 = 3;
+  EXAMPLE_ENUM_VALUE_48 = 4;
+  EXAMPLE_ENUM_VALUE_49 = 5;
+  EXAMPLE_ENUM_VALUE_6 = 6;
+  EXAMPLE_ENUM_VALUE_50 = 7;
+}
+
+message ExampleMessage106 {
+  string example_field_70 = 1;
+  bool example_field_51 = 2;
+}
+

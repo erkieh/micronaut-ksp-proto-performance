@@ -1,0 +1,73 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "com.example.grpc";
+option java_outer_classname = "ExampleOuterClass8";
+
+import "example_proto_3.proto";
+
+package example;
+
+
+service ExampleService7 {
+  rpc ExampleRpc44(ExampleMessage71) returns (ExampleMessage68) {}
+  rpc ExampleRpc45(ExampleMessage70) returns (ExampleMessage68) {}
+  rpc ExampleRpc46(ExampleMessage77) returns (ExampleMessage78) {}
+}
+
+message ExampleMessage70 {
+  int64 example_field_122 = 1;
+  repeated ExampleMessage72 example_field_119 = 2;
+}
+
+message ExampleMessage68 {
+  repeated ExampleMessage72 example_field_119 = 1;
+}
+
+message ExampleMessage71 {
+  int64 example_field_122 = 1;
+}
+
+message ExampleMessage72 {
+  int64 example_field_4 = 1;
+  ExampleMessage74 example_field_123 = 2;
+  ExampleMessage73 example_field_89 = 3;
+  ExampleMessage75 example_field_124 = 4;
+  bool example_field_125 = 5;
+  bool example_field_126 = 6;
+  string example_field_67 = 7;
+  repeated string example_field_16 = 8;
+  ExampleEnum2 example_field_5 = 9;
+}
+
+message ExampleMessage73 {
+  string example_field_64 = 2;
+  string example_field_65 = 3;
+  string example_field_66 = 4;
+}
+
+message ExampleMessage74 {
+  string example_field_18 = 1;
+  string example_field_72 = 2;
+}
+
+message ExampleMessage75 {
+  repeated ExampleMessage76 example_field_127 = 2;
+}
+
+message ExampleMessage76 {
+  string example_field_128 = 1;
+  string example_field_129 = 2;
+  string example_field_130 = 3;
+  int64 example_field_131 = 4;
+  float example_field_132 = 5;
+}
+
+message ExampleMessage77 {
+  int64 example_field_21 = 1;
+  string example_field_133 = 2;
+}
+
+message ExampleMessage78 {
+  repeated string example_field_134 = 1;
+}

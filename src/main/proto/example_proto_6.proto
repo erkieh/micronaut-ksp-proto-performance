@@ -1,0 +1,108 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "com.example.grpc";
+option java_outer_classname = "ExampleOuterClass6";
+
+import "example_proto_3.proto";
+import "google/protobuf/empty.proto";
+
+package example;
+
+
+service ExampleService5 {
+  rpc ExampleRpc9(ExampleMessage20) returns (ExampleMessage17) {}
+  rpc ExampleRpc10(ExampleMessage12) returns (ExampleMessage21) {}
+  rpc ExampleRpc11(ExampleMessage12) returns (ExampleMessage21) {}
+  rpc ExampleRpc12(ExampleMessage22) returns (ExampleMessage23) {}
+  rpc ExampleRpc13(ExampleMessage24) returns (ExampleMessage23) {}
+  rpc ExampleRpc14(ExampleMessage25) returns (ExampleMessage26) {}
+  rpc ExampleRpc15(ExampleMessage12) returns (google.protobuf.Empty) {}
+  rpc ExampleRpc16(ExampleMessage18) returns (ExampleMessage19) {}
+}
+
+message ExampleMessage17 {
+  string example_field_4 = 1;
+  string example_field_25 = 2;
+}
+
+message ExampleMessage18 {
+  int64 example_field_4 = 1;
+  ExampleEnum5 example_field_26 = 2;
+}
+
+enum ExampleEnum5 {
+  EXAMPLE_ENUM_VALUE_18 = 0;
+  EXAMPLE_ENUM_VALUE_19 = 1;
+  EXAMPLE_ENUM_VALUE_20 = 2;
+  EXAMPLE_ENUM_VALUE_21 = 3;
+  EXAMPLE_ENUM_VALUE_22 = 4;
+}
+
+message ExampleMessage19 {
+  int64 example_field_4 = 1;
+  string example_field_18 = 2;
+  bool example_field_27 = 3;
+  int64 example_field_21 = 4;
+}
+
+message ExampleMessage20 {
+  bytes example_field_28 = 1;
+  string example_field_29 = 2;
+  string example_field_30 = 3;
+  int64 example_field_31 = 4;
+  int64 example_field_32 = 5;
+  ExampleEnum5 example_field_5 = 6;
+}
+
+message ExampleMessage21 {
+  string example_field_4 = 1;
+  string example_field_29 = 2;
+  string example_field_30 = 3;
+  string example_field_33 = 4;
+  string example_field_34 = 5;
+  int64 example_field_31 = 6;
+  repeated string example_field_35 = 7;
+  int64 example_field_36 = 8;
+  bytes example_field_28 = 9;
+}
+
+message ExampleMessage22 {
+  string example_field_4 = 1;
+  int64 example_field_31 = 2;
+  string example_field_29 = 3;
+  string example_field_30 = 4;
+}
+
+message ExampleMessage23 {
+  string example_field_4 = 1;
+  string example_field_29 = 2;
+  string example_field_30 = 3;
+  string example_field_33 = 4;
+  string example_field_34 = 5;
+  int64 example_field_31 = 6;
+  repeated string example_field_35 = 7;
+  int64 example_field_36 = 8;
+  string example_field_37 = 9;
+  ExampleMessage19 example_field_5 = 10;
+  string example_field_38 = 11;
+  bool example_field_39 = 12;
+}
+
+message ExampleMessage24 {
+  string example_field_4 = 1;
+  string example_field_29 = 2;
+  string example_field_30 = 3;
+  int64 example_field_32 = 4;
+  string example_field_38 = 5;
+}
+
+message ExampleMessage25 {
+  string example_field_40 = 1;
+  int64 example_field_41 = 2;
+}
+
+message ExampleMessage26 {
+  string example_field_42 = 1;
+  int64 example_field_43 = 2;
+}

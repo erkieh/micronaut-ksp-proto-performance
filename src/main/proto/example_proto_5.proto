@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "com.example.grpc";
+option java_outer_classname = "ExampleOuterClass5";
+
+import "google/protobuf/empty.proto";
+
+package example;
+
+service ExampleService4 {
+  rpc ExampleRpc6(ExampleMessage15) returns (stream ExampleMessage16) {}
+  rpc ExampleRpc8(google.protobuf.Empty) returns (stream ExampleMessage16) {}
+}
+
+message ExampleMessage15 {
+  int64 example_field_4 = 1;
+}
+
+message ExampleMessage16 {
+  string example_field_6 = 1;
+  string example_field_18 = 2;
+  string example_field_24 = 3;
+}
