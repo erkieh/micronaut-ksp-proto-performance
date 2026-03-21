@@ -1,0 +1,9 @@
+[versions]
+grpc-java = "1.75.0"
+grpc-kt = "1.5.0"
+kotlinx-coroutines = "1.10.2"
+
+[libraries]
+grpc = { module = "io.grpc:grpc-services", version.ref = "grpc-java" }
+grpc-kt = { module = "io.grpc:grpc-kotlin-stub", version.ref = "grpc-kt" }
+kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinx-coroutines" }

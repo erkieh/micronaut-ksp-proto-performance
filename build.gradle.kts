@@ -28,6 +28,14 @@ dependencies {
     ksp("io.micronaut.validation:micronaut-validation-processor")
     ksp("io.micronaut.security:micronaut-security-annotations")
     ksp("io.micronaut.tracing:micronaut-tracing-opentelemetry-annotation")
+
+    // GRPC
+    implementation("io.micronaut.grpc:micronaut-grpc-runtime")
+    implementation("io.micronaut.grpc:micronaut-grpc-client-runtime")
+    implementation("io.micronaut.grpc:micronaut-grpc-server-runtime")
+    api(libs.grpc)
+    api(libs.grpc.kt)
+    implementation(libs.kotlinx.coroutines.core)
     implementation("io.micronaut:micronaut-discovery-core")
     implementation("io.micronaut.grpc:micronaut-grpc-runtime")
     implementation("io.micronaut.kotlin:micronaut-kotlin-runtime")
