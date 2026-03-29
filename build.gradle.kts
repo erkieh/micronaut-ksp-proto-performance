@@ -112,7 +112,12 @@ protobuf {
         }
     }
 }
-
+kapt {
+    arguments {
+        arg("micronaut.processing.annotations", "com.example.service.*,com.example.controller.*,com.example.client.*")
+        arg("micronaut.processing.incremental", "true")
+    }
+}
 
 
 //kapt {
@@ -128,7 +133,8 @@ micronaut {
     testRuntime("junit5")
     processing {
         incremental(true)
-        annotations("com.example.*")
+        annotations("com.example.*",
+            "!com.example.grpc.*")
     }
 }
 
